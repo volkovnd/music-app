@@ -21,7 +21,7 @@ router.beforeEach((to, from, next) => {
     // prevent route navigation
     next(false);
     // login the user
-    dispatch('auth/LOGIN_USER');
+   dispatch('auth/loginUser');
   }
   // go to next route
   next();

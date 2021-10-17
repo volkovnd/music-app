@@ -15,6 +15,8 @@ import './api';
 import './components';
 import app from './app';
 
+Vue.config.productionTip = false;
+
 // register plugins
 Vue.use(lazyload);
 Vue.use(tooltip, {
@@ -23,6 +25,7 @@ Vue.use(tooltip, {
   defaultContainer: '.c-tooltips',
   defaultInnerSelector: '.c-tooltips__inner',
 });
+
 
 // create vue instance
 new Vue({

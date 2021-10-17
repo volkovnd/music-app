@@ -10,8 +10,8 @@ const express = require('express'),
 
 // initialize spotify api instance
 const spotifyApi = new SpotifyWebApi({
-  clientId: '', // your client id goes here
-  clientSecret: '', // your client secret goes here
+  clientId: process.env.SPOTIFY_CLIENT_ID || '', // your client id goes here
+  clientSecret: process.env.SPOTIFY_CLIENT_SECRET || '', // your client secret goes here
 });
 
 // spotify api scopes
