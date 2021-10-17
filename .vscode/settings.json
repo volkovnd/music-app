@@ -1,0 +1,102 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true,
+    "**/dist": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true,
+    "**/dist/**": true
+  },
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true
+  },
+
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "vue-html": "html"
+  },
+
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+
+  "stylelint.enable": false,
+  /*
+  "stylelint.validate": [
+    "css",
+    "html",
+    "javascript",
+    "javascriptreact",
+    "less",
+    "markdown",
+    "postcss",
+    "sass",
+    "scss",
+    "source.css.styled",
+    "source.markdown.math",
+    "styled-css",
+    "sugarss",
+    "svelte",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "vue-html",
+    "vue-postcss",
+    "xml",
+    "xsl"
+  ],
+  */
+
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+
+  "json.format.enable": false,
+  "html.format.enable": false,
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "postcss.validate": false,
+
+  "vetur.format.enable": false,
+  "vetur.validation.interpolation": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "vetur.validation.template": false,
+  "vetur.validation.templateProps": false,
+  "vetur.completion.tagCasing": "initial",
+
+  "scss.scannerExclude": ["**/.git", "**/node_modules", "**/bower_components", "**/dist"],
+
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "files.trimTrailingWhitespace": false
+  }
+}
